@@ -44,11 +44,7 @@
                   target="_blank"
                   rel="noopener"
                 >
-                  <img
-                    src="../icons/Instagram-Logo.wine.svg"
-                    alt="A cat"
-                    width="100"
-                  />
+                  <img src="../icons/instagram.svg" alt="A cat" width="100" />
                 </a>
               </li>
               <li>

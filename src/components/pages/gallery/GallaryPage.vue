@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section section class="section">
       <img src="" alt="" />
     </section>
   </div>

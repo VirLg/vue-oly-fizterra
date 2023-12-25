@@ -1,26 +1,24 @@
 <template>
-<HomePage/>
-<GallaryPage/>
-<ContactsPage/>
+  <HomePage />
+  <GallaryPage />
+  <ContactsPage />
 </template>
 
 <script>
-import HomePage from './components/pages/homePage/HomePage.vue'
-import GallaryPage from './components/pages/gallery/GallaryPage.vue'
-import ContactsPage from './components/pages/contacts/ContactsPage.vue'
+import HomePage from './components/pages/homePage/HomePage.vue';
+import GallaryPage from './components/pages/gallery/GallaryPage.vue';
+import ContactsPage from './components/pages/contacts/ContactsPage.vue';
 export default {
   name: 'App',
   data() {
-    return {
-   
-    };
+    return {};
   },
   components: {
     HomePage,
     GallaryPage,
     ContactsPage,
   },
-}
+};
 </script>
 
 <style>
@@ -30,6 +28,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+li {
+  list-style: none;
+  margin: 0;
 }
 </style>
