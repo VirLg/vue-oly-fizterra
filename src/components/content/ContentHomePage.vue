@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <section class="section">
+    <section class="section content_section">
       <h2 class="content_title">{{ title }}</h2>
       <p class="content_text">
         Физиотерапия – прекрасное дополнение, а в некоторых случаях основной
@@ -55,19 +55,33 @@ export default {
 };
 </script>
 <style>
+.content_list_block {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .content_text {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 18px;
   line-height: 1.6;
+  word-wrap: break-word;
 }
 .content_list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: start;
+  padding-left: 0;
 }
 .content_list_item {
   margin-right: auto;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.6;
+}
+.content_section {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 </style>
