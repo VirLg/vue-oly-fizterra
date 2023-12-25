@@ -5,14 +5,16 @@
       <img
         src="https://medeja.com.ua/wp-content/uploads/fyz2.jpg"
         alt=""
-        width="800"
-        height="300"
+        width="1300"
+        height="500"
       />
-      <button type="button">Add Card</button>
     </div>
+    <div><ContentHomePage /></div>
+    <button type="button">Add Card</button>
   </section>
 </template>
 <script>
+import ContentHomePage from '../content/ContentHomePage.vue';
 export default {
   name: 'HeroComponent',
   props: {},
@@ -20,6 +22,9 @@ export default {
     return {
       title: 'Main Page',
     };
+  },
+  components: {
+    ContentHomePage,
   },
 };
 </script>

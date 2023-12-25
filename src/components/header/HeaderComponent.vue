@@ -5,12 +5,12 @@
       <li class="gallery navigate_list">Gallery</li>
       <li class="contacts navigate_list">Contacts</li>
     </ul>
-    <div class="contacts">
+    <div class="contacts_block">
       <button type="button" class="btn_fb" />
 
       <button type="button" class="btn_fb telegramm" />
       <button type="button" class="btn_fb instagram" />
-      <button type="button" class="btn_fb" />
+      <button type="button" class="btn_fb viber" />
     </div>
   </div>
 </template>
@@ -23,9 +23,10 @@ export default {
 .header_section {
   outline: 1px solid red;
   width: 1440px;
-  height: 200px;
+
   align-items: center;
   padding-top: 50px;
+  padding-bottom: 50px;
   background-color: green;
 }
 .navigate {
@@ -60,15 +61,17 @@ export default {
 .telegramm::after {
   background-image: url('../icons/telegram.svg');
 }
-.telegramm::after {
-  background-image: url('../icons/telegram.svg');
-}
+
 .instagram::after {
   background-image: url('../icons/instagram.svg');
 }
-.contacts {
+.viber::after {
+  background-image: url('../icons/viber.svg');
+}
+.contacts_block {
   display: flex;
   gap: 10px;
   justify-content: center;
+  margin-top: 20px;
 }
 </style>

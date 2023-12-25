@@ -100,3 +100,8 @@ export default {
   },
 };
 </script>
+<style>
+.footer {
+  background-color: green;
+}
+</style>
