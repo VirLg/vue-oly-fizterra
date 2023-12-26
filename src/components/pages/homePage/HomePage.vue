@@ -1,7 +1,6 @@
 <template>
   <div class="">
     <section class="section">
-      <div class="logo"></div>
       <div><HeaderComponent /></div>
     </section>
     <section section class="section">

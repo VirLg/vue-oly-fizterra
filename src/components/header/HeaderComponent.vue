@@ -1,10 +1,13 @@
 <template>
   <div class="header_section">
-    <ul class="navigate">
-      <li class="home navigate_list">Home</li>
-      <li class="gallery navigate_list">Gallery</li>
-      <li class="contacts navigate_list">Contacts</li>
-    </ul>
+    <div class="header_nav">
+      <img src="../images/logo1.png" alt="" width="290" height="80" />
+      <ul class="navigate">
+        <li class="home navigate_list">Home</li>
+        <li class="gallery navigate_list">Gallery</li>
+        <li class="contacts navigate_list">Contacts</li>
+      </ul>
+    </div>
     <div class="contacts_block">
       <button type="button" class="btn_fb" />
 
@@ -20,14 +23,20 @@ export default {
 };
 </script>
 <style>
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: center;
+}
 .header_section {
-  outline: 1px solid red;
   width: 1440px;
 
   align-items: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: green;
+  background-color: rgba(12, 79, 51);
 }
 .navigate {
   display: flex;

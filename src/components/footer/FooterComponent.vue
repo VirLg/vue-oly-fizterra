@@ -102,6 +102,6 @@ export default {
 </script>
 <style>
 .footer {
-  background-color: green;
+  background-color: rgb(12, 79, 51);
 }
 </style>

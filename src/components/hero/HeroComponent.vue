@@ -1,7 +1,6 @@
 <template>
   <section>
-    <div>
-      <h1>{{ title }}</h1>
+    <div style="margin-top: 20px">
       <img
         src="https://medeja.com.ua/wp-content/uploads/fyz2.jpg"
         alt=""
@@ -19,9 +18,7 @@ export default {
   name: 'HeroComponent',
   props: {},
   data() {
-    return {
-      title: 'Main Page',
-    };
+    return {};
   },
   components: {
     ContentHomePage,
