@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <section class="section content_section">
+    <section class="section">
       <h2 class="content_title">{{ title }}</h2>
       <p class="content_text">
         Физиотерапия – прекрасное дополнение, а в некоторых случаях основной
@@ -20,38 +20,81 @@
         позволяющей применять следующие методы лечения:
       </p>
       <div class="content_list_block">
-        <ul class="content_list">
-          <li class="content_list_item">
-            Гальванизация и лекарственный электрофорез
-          </li>
-          <li class="content_list_item">Электростимуляция</li>
-          <li class="content_list_item">
-            Транскраниальная электроанальгезия (аналог электросна)
-          </li>
-          <li class="content_list_item">Магнитотерапия</li>
-          <li class="content_list_item">
-            Лечение лазером при заболеваниях лор – органов
-          </li>
-          <li class="content_list_item">УВЧ терапия</li>
-          <li class="content_list_item">Амплипульстерапия, амплипульсфорез</li>
-          <li class="content_list_item">Диадинамотерапия</li>
-          <li class="content_list_item">Магнитолазерная терапия</li>
-          <li class="content_list_item">Ингаляционная терапия</li>
+        <ul>
+          <ContentHomePageItem
+            v-for="item in massageType"
+            :key="item.id"
+            v-bind:massag_data="item"
+          />
         </ul>
       </div>
     </section>
   </div>
 </template>
+
 <script>
+import ContentHomePageItem from './ContentHomePageItem.vue';
 export default {
   name: 'ContentHomePage',
-  props: {},
+
   data() {
     return {
-      title: 'Кабинет физиотерапии ',
-      text: 'Массаж в свою ',
+      massageType: [
+        {
+          id: '1',
+          name: ' Гальванизация и лекарственный электрофорез',
+          date: '1.12',
+          price: '500',
+        },
+        {
+          id: '2',
+          name: ' Электростимуляцияз',
+          date: '3.12',
+          price: '200',
+        },
+        {
+          id: '3',
+          name: ' Транскраниальная электроанальгезия (аналог электросна)',
+          date: '5.12',
+          price: '350',
+        },
+        {
+          id: '4',
+          name: ' Амплипульстерапия, амплипульсфорез',
+          date: '7.12',
+          price: '350',
+        },
+        {
+          id: '5',
+          name: ' Лечение лазером при заболеваниях лор – органов',
+          date: '12.12',
+          price: '800',
+        },
+        {
+          id: '6',
+          name: ' УВЧ терапия',
+          date: '15.12',
+          price: '800',
+        },
+        {
+          id: '7',
+          name: ' Диадинамотерапия',
+          date: '17.12',
+          price: '400',
+        },
+        {
+          id: '8',
+          name: ' Магнитолазерная терапия',
+          date: '19.12',
+          price: '400',
+        },
+      ],
     };
   },
+  components: {
+    ContentHomePageItem,
+  },
+  metods: {},
 };
 </script>
 <style>

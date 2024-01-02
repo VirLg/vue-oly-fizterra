@@ -8,7 +8,9 @@
         height="500"
       />
     </div>
-    <div><ContentHomePage /></div>
+    <div>
+      <ContentHomePage />
+    </div>
     <button type="button">Add Card</button>
   </section>
 </template>
@@ -23,5 +25,6 @@ export default {
   components: {
     ContentHomePage,
   },
+  methods: {},
 };
 </script>
